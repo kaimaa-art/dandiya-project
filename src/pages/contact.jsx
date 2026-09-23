@@ -497,7 +497,7 @@
 
 //     try {
 //       const response = await fetch(
-//         "http://192.168.31.122:5000/api/contact",
+//         "https://dandiya-backend.onrender.com/api/contact",
 //         {
 //           method: "POST",
 //           headers: {
@@ -1074,7 +1074,7 @@ function Contact() {
 
     try {
       const response = await fetch(
-        "http://192.168.31.122:5000/api/contact",
+        "https://dandiya-backend.onrender.com/api/contact",
         {
           method: "POST",
           headers: {

@@ -30,7 +30,7 @@
 //             setLoading(true);
 
 //             const response = await fetch(
-//                 "http://192.168.31.122:5000/api/admin/login",
+//                 "https://dandiya-backend.onrender.com/api/admin/login",
 //                 {
 //                     method: "POST",
 //                     headers: {
@@ -334,7 +334,7 @@ function AdminLogin() {
             setLoading(true);
 
             const response = await fetch(
-                "http://192.168.31.122:5000/api/admin/login",
+                "https://dandiya-backend.onrender.com/api/admin/login",
                 {
                     method: "POST",
                     headers: {

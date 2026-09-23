@@ -117,7 +117,7 @@ function QRScanner() {
                 );
 
             const response = await fetch(
-                "http://192.168.31.122:5000/api/ticket/scan",
+                "https://dandiya-backend.onrender.com/api/ticket/scan",
                 {
                     method: "POST",
                     headers: {

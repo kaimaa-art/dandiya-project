@@ -128,7 +128,7 @@
 //         // ================= CREATE RAZORPAY ORDER =================
 
 //         const response = await fetch(
-//             "http://192.168.31.122:5000/api/payment/create-order",
+//             "https://dandiya-backend.onrender.com/api/payment/create-order",
 //             {
 //                 method: "POST",
 
@@ -197,7 +197,7 @@
 //                     // ================= VERIFY PAYMENT =================
 
 //                     const verifyResponse = await fetch(
-//                         "http://192.168.31.122:5000/api/payment/verify-payment",
+//                         "https://dandiya-backend.onrender.com/api/payment/verify-payment",
 //                         {
 //                             method: "POST",
 
@@ -1337,7 +1337,7 @@ function Checkout() {
             // ================= CREATE RAZORPAY ORDER =================
 
             const response = await fetch(
-                "http://192.168.31.122:5000/api/payment/create-order",
+                "https://dandiya-backend.onrender.com/api/payment/create-order",
                 {
                     method: "POST",
 
@@ -1408,7 +1408,7 @@ function Checkout() {
                         // ================= VERIFY PAYMENT =================
 
                         const verifyResponse = await fetch(
-                            "http://192.168.31.122:5000/api/payment/verify-payment",
+                            "https://dandiya-backend.onrender.com/api/payment/verify-payment",
                             {
                                 method: "POST",
 
