@@ -8,6 +8,9 @@ import {
     ChevronRight,
 } from "lucide-react";
 
+import instaLogo from "../assets/insta-logo.png";
+import facebookLogo from "../assets/facebook-logo.png";
+
 function Footer() {
     const quickLinks = [
         { name: "Home", path: "/" },
@@ -63,19 +66,29 @@ function Footer() {
                     <div className="mt-6 flex gap-3">
 
                         <a
-                            href="#"
-                            aria-label="Instagram"
-                            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/60 transition-all duration-300 hover:-translate-y-1 hover:border-orange-400 hover:bg-orange-500 hover:text-black sm:h-11 sm:w-11"
-                        >
-                            <Camera size={18} />
-                        </a>
-
-                        <a
-                            href="#"
+                            href="https://www.facebook.com/share/1FiLKpGa8H/"
+                            target="_blank"
                             aria-label="Social Media"
                             className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/60 transition-all duration-300 hover:-translate-y-1 hover:border-orange-400 hover:bg-orange-500 hover:text-black sm:h-11 sm:w-11"
                         >
-                            <Camera size={18} />
+                            <img
+                                src={facebookLogo}
+                                alt="Instagram"
+                                className="w-16 h-16 object-cover rounded-full"
+                            />
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/Jharkhand_Rasoi/"
+                            target="_blank"
+                            aria-label="Social Media"
+                            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/60 transition-all duration-300 hover:-translate-y-1 hover:border-orange-400 hover:bg-orange-500 hover:text-black sm:h-11 sm:w-11"
+                        >
+                            <img
+                                src={instaLogo}
+                                alt="Instagram"
+                                className="w-16 h-16 object-cover rounded-full"
+                            />
                         </a>
 
                     </div>
@@ -132,7 +145,7 @@ function Footer() {
 
                             <div className="min-w-0">
                                 <p className="font-medium">
-                                    Event Ground
+                                    Rs celebration main road gola
                                 </p>
 
                                 <p className="mt-1 text-sm leading-6 text-white/50">
@@ -153,7 +166,7 @@ function Footer() {
 
                             <div className="min-w-0">
                                 <p className="break-words font-medium">
-                                    +91 XXXXX XXXXX
+                                    +91 75410 69169
                                 </p>
 
                                 <p className="mt-1 text-sm leading-6 text-white/50">
@@ -174,7 +187,7 @@ function Footer() {
 
                             <div className="min-w-0">
                                 <p className="break-all font-medium">
-                                    info@dandiyanight.com
+                                    thegranddandiyanightseason@gmail.com
                                 </p>
 
                                 <p className="mt-1 text-sm leading-6 text-white/50">

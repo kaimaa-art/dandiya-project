@@ -22,6 +22,39 @@ function Home() {
 
     const heroImages = [hero1, hero2, hero3];
 
+    const sponsors = [
+        {
+            name: "ROYAL EVENTS",
+            type: "EVENT PARTNER",
+            icon: "✦",
+        },
+        {
+            name: "UTSAV GROUP",
+            type: "POWERED BY",
+            icon: "◆",
+        },
+        {
+            name: "NAVRANG",
+            type: "SPONSORED BY",
+            icon: "✺",
+        },
+        {
+            name: "RANGILO",
+            type: "FESTIVAL PARTNER",
+            icon: "✦",
+        },
+        {
+            name: "GARBA BEATS",
+            type: "MUSIC PARTNER",
+            icon: "♫",
+        },
+        {
+            name: "SHREE GROUP",
+            type: "EVENT SUPPORTER",
+            icon: "✧",
+        },
+    ];
+
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextSlide = () => {
@@ -49,6 +82,121 @@ function Home() {
 
     return (
         <main className="w-full overflow-x-hidden bg-[#050505] text-white">
+
+            <section className="relative overflow-hidden border-b border-orange-400/10 bg-[#080808] py-4 sm:py-5">
+
+                {/* Soft background glow */}
+                <div className="pointer-events-none absolute left-1/2 top-1/2 h-24 w-[70%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-orange-500/10 blur-[70px]" />
+
+                {/* Heading */}
+                <div className="relative z-10 mb-3 flex items-center justify-center gap-3 sm:mb-4">
+
+                    <span className="h-px w-8 bg-gradient-to-r from-transparent to-orange-400/70 sm:w-14" />
+
+                    <p className="text-[9px] font-semibold tracking-[0.35em] text-orange-300/80 sm:text-[10px] sm:tracking-[0.5em]">
+                        PROUDLY PRESENTED BY
+                    </p>
+
+                    <span className="h-px w-8 bg-gradient-to-l from-transparent to-orange-400/70 sm:w-14" />
+
+                </div>
+
+                {/* Infinite Carousel */}
+                <div className="relative z-10 overflow-hidden">
+
+                    <motion.div
+                        className="flex w-max items-center"
+                        animate={{ x: ["0%", "-50%"] }}
+                        transition={{
+                            duration: 50,
+                            ease: "linear",
+                            repeat: Infinity,
+                        }}
+                    >
+
+                        {[...sponsors, ...sponsors].map((sponsor, index) => (
+
+                            <div
+                                key={`${sponsor.name}-${index}`}
+                                className="mx-2 flex items-center sm:mx-3"
+                            >
+
+                                <div
+                                    className=" group flex min-w-[420px] items-center gap-5 rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-5 backdrop-blur-md transition-all duration-300 hover:border-orange-400/40 hover:bg-orange-400/[0.06] sm:min-w-[620px] sm:px-8 sm:py-6 "
+                                >
+
+                                    {/* Fake Logo */}
+                                    <div className="
+                                    flex
+                                    h-12
+                                    w-12
+                                    shrink-0
+                                    items-center
+                                    justify-center
+                                    rounded-lg
+                                    border
+                                    border-orange-400/30
+                                    bg-gradient-to-br
+                                    from-orange-500/20
+                                    to-yellow-400/5
+                                    text-lg
+                                    text-orange-400
+                                    shadow-[0_0_18px_rgba(249,115,22,0.08)]
+                                    transition-all
+                                    duration-300
+                                    group-hover:border-orange-400/70
+                                    group-hover:shadow-[0_0_20px_rgba(249,115,22,0.2)]
+                                ">
+                                        {sponsor.icon}
+                                    </div>
+
+                                    {/* Sponsor Details */}
+                                    <div className="min-w-0">
+
+                                        <p className="
+                                        truncate
+                                        text-[7px]
+                                        font-medium
+                                        tracking-[0.2em]
+                                        text-orange-400/70
+                                        sm:text-[8px]
+                                    ">
+                                            {sponsor.type}
+                                        </p>
+
+                                        <p className="
+                                        mt-0.5
+                                        truncate
+                                        text-xs
+                                        font-bold
+                                        tracking-[0.12em]
+                                        text-white/90
+                                        sm:text-sm
+                                    ">
+                                            {sponsor.name}
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                {/* Separator */}
+                                <span className="mx-2 text-orange-400/30 sm:mx-3">
+                                    •
+                                </span>
+
+                            </div>
+
+                        ))}
+
+                    </motion.div>
+
+                </div>
+
+                {/* Bottom shine */}
+                <div className="pointer-events-none absolute bottom-0 left-1/2 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-orange-400/30 to-transparent" />
+
+            </section>
 
             {/* ================= HERO SECTION ================= */}
 
