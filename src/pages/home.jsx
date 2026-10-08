@@ -17,6 +17,12 @@ import { useEffect, useState } from "react";
 import hero1 from "../assets/hero1.png";
 import hero2 from "../assets/hero2.png";
 import hero3 from "../assets/hero3.png";
+import jharkhand_rasoi from "../assets/jharkhand-rasoi.png";
+import nandani_garments from "../assets/nandani-garments.png";
+import ravi_enterprises from "../assets/ravi-enterprises.png";
+import navin_tyres from "../assets/navin-tyres.png";
+import kids_heaven_play_school from "../assets/kids-heaven-play-school.png";
+import maa_ananta_furniture from "../assets/maa-ananta-furniture.png";
 
 function Home() {
 
@@ -24,34 +30,34 @@ function Home() {
 
     const sponsors = [
         {
-            name: "ROYAL EVENTS",
+            name: "MAA ANANTA FURTINURE",
             type: "EVENT PARTNER",
-            icon: "✦",
+            icon: maa_ananta_furniture,
         },
         {
-            name: "UTSAV GROUP",
+            name: "RAVI ENTERPRISES",
             type: "POWERED BY",
-            icon: "◆",
+            icon: ravi_enterprises,
         },
         {
-            name: "NAVRANG",
+            name: "KIDS HEAVEN - PLAY SCHOOL",
             type: "SPONSORED BY",
-            icon: "✺",
+            icon: kids_heaven_play_school,
         },
         {
-            name: "RANGILO",
+            name: "NANDANI GARMENTS",
             type: "FESTIVAL PARTNER",
-            icon: "✦",
+            icon: nandani_garments,
         },
         {
-            name: "GARBA BEATS",
+            name: "NAVIN BATTERY AND TYRES",
             type: "MUSIC PARTNER",
-            icon: "♫",
+            icon: navin_tyres,
         },
         {
-            name: "SHREE GROUP",
+            name: "JHARKHAND RASOI",
             type: "EVENT SUPPORTER",
-            icon: "✧",
+            icon: jharkhand_rasoi,
         },
     ];
 
@@ -125,29 +131,31 @@ function Home() {
                                     className=" group flex min-w-[420px] items-center gap-5 rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-5 backdrop-blur-md transition-all duration-300 hover:border-orange-400/40 hover:bg-orange-400/[0.06] sm:min-w-[620px] sm:px-8 sm:py-6 "
                                 >
 
-                                    {/* Fake Logo */}
+                                    {/* Sponsor Logo */}
                                     <div className="
-                                    flex
-                                    h-12
-                                    w-12
-                                    shrink-0
-                                    items-center
-                                    justify-center
-                                    rounded-lg
-                                    border
-                                    border-orange-400/30
-                                    bg-gradient-to-br
-                                    from-orange-500/20
-                                    to-yellow-400/5
-                                    text-lg
-                                    text-orange-400
-                                    shadow-[0_0_18px_rgba(249,115,22,0.08)]
-                                    transition-all
-                                    duration-300
-                                    group-hover:border-orange-400/70
-                                    group-hover:shadow-[0_0_20px_rgba(249,115,22,0.2)]
-                                ">
-                                        {sponsor.icon}
+                                        flex
+                                        h-16
+                                        w-16
+                                        shrink-0
+                                        items-center
+                                        justify-center
+                                        overflow-hidden
+                                        rounded-xl
+                                        border
+                                        border-orange-400/30
+                                        bg-white
+                                        p-1
+                                        shadow-[0_0_18px_rgba(249,115,22,0.08)]
+                                        transition-all
+                                        duration-300
+                                        group-hover:border-orange-400/70
+                                        group-hover:shadow-[0_0_20px_rgba(249,115,22,0.2)]
+                                        ">
+                                        <img
+                                            src={sponsor.icon}
+                                            alt={sponsor.name}
+                                            className="h-full w-full object-contain"
+                                        />
                                     </div>
 
                                     {/* Sponsor Details */}
