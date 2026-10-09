@@ -219,7 +219,7 @@ function Contact() {
             </div>
 
             <h3 className="mt-4 font-bold sm:mt-5">
-              Event Location
+              Rs celebration main road gola
             </h3>
 
             <p className="mt-2 text-sm leading-6 text-white/55">
@@ -263,7 +263,7 @@ function Contact() {
             </h3>
 
             <p className="mt-2 text-sm text-white/55">
-              +91 XXXXX XXXXX
+              +91 75410 69169
             </p>
 
           </motion.div>
@@ -303,7 +303,7 @@ function Contact() {
             </h3>
 
             <p className="mt-2 break-all text-sm text-white/55">
-              info@dandiyanight.com
+              thegranddandiyanightseason@gmail.com
             </p>
 
           </motion.div>
