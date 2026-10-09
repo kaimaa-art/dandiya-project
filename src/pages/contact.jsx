@@ -219,11 +219,11 @@ function Contact() {
             </div>
 
             <h3 className="mt-4 font-bold sm:mt-5">
-              Rs celebration main road gola
+              Event Location
             </h3>
 
             <p className="mt-2 text-sm leading-6 text-white/55">
-              Your Event Ground Location
+              Rs celebration main road gola
             </p>
 
           </motion.div>
